@@ -8,8 +8,8 @@
     --text-color-2: #F5F5F5;
     --text-color-3: #D4D4D4 ; 
     --color-link-1: #58A6FF;
-    --color-link-1: #9E9E9E;
-    --color-link-1: #61DAFB;
+    --color-link-2: #9E9E9E;
+    --color-link-3: #61DAFB;
     --color-title-1: #ffffff;
     --color-title-1: #8AB4F8;
     --color-title-1: #E1E1E1;
@@ -23,21 +23,25 @@
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 0 auto;
-    width: 90%;
+    width: 95%;
     display: flex;
     
 }
+
 
 nav > a{
    
    color: var(--color-link-1);
    font-size: 25px;
-   text-decoration: none;   
+   text-decoration: none; 
+
 }
 nav > a:hover{
     color: #8AB4F8;
-    font-size: 27px;
     text-transform: uppercase;
+}
+nav > a:active{
+    border: 1px solid #8AB4F8;
 }
 nav {
     border-right: #58A6FF;
@@ -56,6 +60,11 @@ main {
 
 hr{
     color: #9E9E9E;
+    border: none;
+    height: 1px;
+    background-color: #333;
+    margin: 10px 0;
+
 }
 section{
     display: flex;
@@ -79,7 +88,8 @@ h1 {
 
 h2 {
     font-size: 24px;
-    font-weight: 700; /* en gras */
+    font-weight: 500; /* en gras */
+    text-align: right;
 }
 
 
@@ -96,16 +106,30 @@ header {
 }
 
 
-/* @media (min-width: 800px) {
-    #navbar {
-        position: fixed;
-        left: 0;
+ @media (max-width: 750px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        background-color: var(--bg-color-2);
+        color: var(--color-link-2);
+        width: 100%;
+    }
+    #navbar{
+        text-align: center;
         top: 0;
+        margin: 0 auto;
         width: 300px;
         height: 100%;
         overflow: auto;
     }
-    #main-doc {
-        margin-left: 305px;
+    header{
+        text-align: center;
+        display: block;
+        margin-bottom: 1rem;
     }
-} */
+   
+
+    
+   
+    
+} 
