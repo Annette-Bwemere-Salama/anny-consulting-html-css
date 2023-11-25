@@ -1,4 +1,6 @@
 :root{
+    background-color: var(--bg-color-2);
+    color: var(--text-color-1);
     --bg-color-1: #1E1E1E;
     --bg-color-2: #202124;
     --bg-color-3: #0D1117;
@@ -20,4 +22,77 @@
 
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0 auto;
+    padding: auto;
+}
+
+nav > a{
+    color: var(--color-link-1);
+   font-size: 25px;
+   text-decoration: none;
+}
+nav {
+    border-right: #58A6FF;
+    gap: 5px;
+}
+section{
+    display: flex;
+    flex-direction: column;
+}
+p{
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    font-size: 32px;
+    font-weight: 700; /* en gras */
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 700; /* en gras */
+}
+
+h3 {
+    font-size: 18.72px;
+    font-weight: 700; /* en gras */
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: 700; /* en gras */
+}
+
+h5 {
+    font-size: 13.28px;
+    font-weight: 700; /* en gras */
+}
+
+h6 {
+    font-size: 10.72px;
+    font-weight: 700; /* en gras */
+}
+
+header {
+    font-size: 32px;
+    font-weight: bold; 
+}
+
+
+@media (min-width: 800px) {
+    #navbar {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 300px;
+        height: 100%;
+        overflow: auto;
+    }
+    #main-doc {
+        margin-left: 305px;
+    }
 }
