@@ -30,10 +30,14 @@ body{
 
 nav > a{
    
-    color: var(--color-link-1);
+   color: var(--color-link-1);
    font-size: 25px;
-   text-decoration: none;
-   
+   text-decoration: none;   
+}
+nav > a:hover{
+    color: #8AB4F8;
+    font-size: 27px;
+    text-transform: uppercase;
 }
 nav {
     border-right: #58A6FF;
@@ -56,6 +60,9 @@ hr{
 section{
     display: flex;
     flex-direction: column;
+}
+section h1{
+    text-align: center;
 }
 p{
     font-size: 16px;
