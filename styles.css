@@ -1,0 +1,19 @@
+:root{
+    --bg-color-1: #1E1E1E;
+    --bg-color-2: #202124;
+    --bg-color-3: #0D1117;
+    --text-color-1: #D1D5DB;
+    --text-color-2: #F5F5F5;
+    --text-color-3: #D4D4D4 ; 
+    --color-link-1: #58A6FF;
+    --color-link-1: #9E9E9E;
+    --color-link-1: #61DAFB;
+    --color-title-1: #ffffff;
+    --color-title-1: #8AB4F8;
+    --color-title-1: #E1E1E1;
+   
+}
+
+*{
+    box-sizing: border-box;
+}
